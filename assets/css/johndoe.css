@@ -183,7 +183,6 @@ a:not([href]):not([tabindex]):focus {
   outline: 0px;
 }
 
-
 pre, code, kbd, samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
@@ -569,12 +568,7 @@ pre code {
 }
 
 .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -1259,6 +1253,20 @@ pre code {
       -webkit-box-flex: 0;
       flex: 0 0 33.3333%;
       max-width: 33.3333%;
+  }
+
+  .section#resume .col-lg-4 {
+      background-color: rgb(57, 84, 59);
+      -webkit-box-flex: 0;
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+  }
+
+  .section#portfolio .col-lg-4 {
+  }
+
+  .portfolio-item {
+      border: 2px solid rgb(231, 217, 205);
   }
 
   .col-lg-5 {
@@ -2844,7 +2852,6 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-outline-danger {
-  color: redrgb(80, 66, 45);
   border: 2px solid rgb(80, 66, 45);
 }
 
@@ -2855,7 +2862,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-outline-danger:focus, .btn-outline-danger.focus {
-  box-shadow: #62702D 0px 0px 0px 0.1rem;
+  box-shadow: rgb(98, 112, 45) 0px 0px 0px 0.1rem;
 }
 
 .btn-outline-danger.disabled, .btn-outline-danger:disabled {
@@ -4276,7 +4283,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-  color: #62702D;
+  color: rgb(98, 112, 45);
 }
 
 .navbar-light .navbar-toggler {
@@ -9728,7 +9735,9 @@ a.text-warning:hover, a.text-warning:focus {
   color: rgb(255, 63, 54) !important;
 }
 
-.text-danger {color: rgb(126, 159, 175);}
+.text-danger {
+  color: rgb(126, 159, 175);
+}
 
 a.text-danger:hover, a.text-danger:focus {
   color: rgb(245, 19, 48) !important;
@@ -9743,7 +9752,7 @@ a.text-light:hover, a.text-light:focus {
 }
 
 .text-dark {
-  color: rgb(143, 203, 71) !important;
+  color: rgb(98, 112, 45) !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
@@ -9755,7 +9764,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: rgb(108, 117, 125) !important;
+  color: rgb(98, 112, 45);
 }
 
 .text-black-50 {
@@ -9977,7 +9986,6 @@ p {
   opacity: 0;
 }
 
-
 .card {
   margin-bottom: 30px;
 }
@@ -10004,14 +10012,13 @@ p {
 }
 
 .subtitle a {
-  color: darkblue; /* Adjust link color as needed */
+  color: darkblue;
   text-decoration: underline;
 }
 
-/* Define styles for the link when hovered */
 .subtitle a:hover {
   color: rgb(51, 170, 207);
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline;
 }
 
 .portfolio .filters {
@@ -10101,47 +10108,34 @@ p {
   visibility: visible;
 }
 
-
 .read-more {
-  color: rgb(57, 84, 59);
+  color: rgb(80, 66, 45);
   font-weight: bold;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  margin-bottom: 30px;
   overflow: hidden;
-  margin: 0 1px 30px;
+  margin: 0px 1px 30px;
 }
 
 .read-more:hover {
-  color: red;
+  color: rgb(98, 112, 45);
 }
 
 #resume {
   background-color: rgb(57, 84, 59);
 }
 
-/* Custom CSS for the #blog section */
 #blog {
-  background-color: #62702D; /* Specify your desired background color here */
-  padding: 50px 0; /* Optional: Adjust padding as per your design */
+  background-color: rgb(80, 66, 45);
+  padding: 50px 0px;
 }
 
-/* Additional styling for the content inside the #blog section can be added here */
-
-
 .blog-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  border: 1px solid #dee2e6;
-  margin-bottom: 30px;
+  border: 1px solid rgb(222, 226, 230);
   overflow: hidden;
-  margin: 0 15px 30px;
+  margin: 0px 15px 30px;
 }
 
 .blog-card .img-holder {
@@ -10156,7 +10150,7 @@ p {
 }
 
 .blog-card .content-holder {
-  background-color: #C1B5A6;
+  background-color: rgb(244, 240, 225);
   padding: 30px 20px 30px 30px;
 }
 
@@ -10448,7 +10442,6 @@ pre code, pre .code {
   padding: 80px 0px;
 }
 
-
 .about-section {
   background-color: rgb(57, 84, 59);
   border-bottom: 30px solid rgb(244, 240, 225);
@@ -10458,8 +10451,6 @@ pre code, pre .code {
   background: rgb(244, 240, 225);
 }
 
-
-
 .about-section .about-card {
   margin-right: 8px;
   padding: 60px;
@@ -10468,17 +10459,16 @@ pre code, pre .code {
 
 .about-section .about-card:last-child {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   margin-right: -15px;
   margin-left: -1px;
-  color: #5D462E;
+  color: rgb(93, 70, 46);
   background: rgb(244, 240, 225);
   border-right: none;
-  flex-direction: column;
 }
 
 .contact {
-  background-color: rgb(57, 84, 59);
+  background-color: rgb(231, 217, 205);
   position: relative;
   min-height: 700px;
   display: flex;
@@ -10513,12 +10503,13 @@ pre code, pre .code {
 
 .contact .contact-form-card, .contact .contact-info-card {
   padding: 35px;
-  background: rgb(231, 217, 205);
-  min-height: 500px;
+  background: rgb(244, 240, 225);
+  /* min-height: 500px; */
 }
 
 .contact .contact-info-card {
   padding-right: 20px;
+  color: rgb(80, 66, 45);
 }
 
 .contact .contact-title {
@@ -10529,7 +10520,7 @@ pre code, pre .code {
   content: "";
   width: 20px;
   height: 2px;
-  background: rgb(143, 203, 71);
+  background: rgb(98, 112, 45);
   display: block;
   margin-top: 10px;
 }
