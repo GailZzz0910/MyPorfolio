@@ -10126,7 +10126,7 @@ p {
 }
 
 #blog {
-  background-color: rgb(80, 66, 45);
+  background-color: #62702D;
   padding: 50px 0px;
 }
 
@@ -10155,7 +10155,7 @@ p {
 }
 
 .blog-card .content-holder .title {
-  color: rgb(80, 66, 45);
+  color: #39543B;
   font-weight: 500;
   font-size: 25px;
   opacity: 0.8;
@@ -10172,11 +10172,10 @@ p {
 
 .blog-card .content-holder .post-details a {
   margin-right: 10px;
-  color: rgb(68, 68, 68);
+  color: rgb(80, 66, 45);
   text-decoration: none;
   display: inline-block;
   font-weight: 600;
-  opacity: 0.7;
   font-size: 13px;
 }
 
@@ -10206,8 +10205,55 @@ p {
   }
 }
 
-.custom-map {
-  height: 400px;
+
+/* CSS for the heading "Spotify" */
+#blog h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(80, 66, 45);
+  margin-bottom: 20px;
+}
+
+/* CSS for the text "Playlist" within the heading */
+#blog .text-danger {
+  color: rgb(244, 240, 225);
+}
+
+/* CSS for the container within the section */
+#blog .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* CSS for the blog card */
+#blog .blog-card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* CSS for the image holder */
+#blog .img-holder img {
+  width: 100%;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+/* CSS for the paragraphs */
+.content-holder p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #39543B;
+  margin-bottom: 10px;
+}
+
+/* CSS for the bold text */
+.content-holder p b {
+  font-weight: bold;
+  color: #39543B;
 }
 
 pre {
